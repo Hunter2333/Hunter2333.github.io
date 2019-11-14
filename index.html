@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/src/click.js"></script>
 <html  lang="en">
 <head>
     <meta charset="utf-8" />
@@ -27,13 +29,13 @@
 
 
 
-<link rel="icon" href="/images/favicon.svg">
+<link rel="icon" href="/images/favicon_sxq.ico">
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
 
 
     
@@ -142,6 +144,10 @@
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-11-07T01:54:55.217Z">2019-11-07</time>
                 
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
+                </div>
+                
                 
                 <span class="level-item has-text-grey">
                     
@@ -238,20 +244,20 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categories
+                        Category
                     </p>
                     <p class="title has-text-weight-normal">
-                        0
+                        1
                     </p>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Tags
+                        Tag
                     </p>
                     <p class="title has-text-weight-normal">
-                        0
+                        1
                     </p>
                 </div>
             </div>
@@ -295,9 +301,9 @@
             </a>
             
             <a class="level-item button is-white is-marginless" target="_blank"
-                title="Email" href="/mailto:sunxiaoqingfighting@foxmail.com">
+                title="Email" href="//mailto:&amp;#115;&amp;#117;&amp;#110;&amp;#120;&amp;#105;&amp;#97;&amp;#111;&amp;#113;&amp;#105;&amp;#110;&amp;#103;&amp;#102;&amp;#105;&amp;#103;&amp;#104;&amp;#116;&amp;#105;&amp;#110;&amp;#103;&amp;#64;&amp;#102;&amp;#111;&amp;#120;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#109;">
                 
-                <i class="far fa-envelope"></i>
+                <i class="fas fa-envelope"></i>
                 
             </a>
             
@@ -370,13 +376,28 @@
                 Categories
             </h3>
             <ul class="menu-list">
-            
+            <li>
+        <a class="level is-marginless" href="/categories/Hexo/">
+            <span class="level-start">
+                <span class="level-item">Hexo</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li>
             </ul>
         </div>
     </div>
 </div>
     
-        
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Tag Cloud
+        </h3>
+        <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
+    </div>
+</div>
     
     
         <div class="column-right-shadow is-hidden-widescreen ">
@@ -400,7 +421,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-07T01:54:55.217Z">2019-11-07</time></div>
                     <a href="/2019/11/07/hello-world/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
                     </p>
                 </div>
             </div>
@@ -440,6 +461,13 @@
                 Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Hexo/">
+                        <span class="tag">Hexo</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
                 
             </div>
         </div>
@@ -476,7 +504,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-07T01:54:55.217Z">2019-11-07</time></div>
                     <a href="/2019/11/07/hello-world/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
                     </p>
                 </div>
             </div>
@@ -516,6 +544,13 @@
                 Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Hexo/">
+                        <span class="tag">Hexo</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
                 
             </div>
         </div>
@@ -708,5 +743,13 @@ document.addEventListener('DOMContentLoaded', function () {
 <link rel="stylesheet" href="/css/search.css">
 <link rel="stylesheet" href="/css/insight.css">
     
+
+    <!-- 雪花特效 -->
+    <script type="text/javascript">
+        var windowWidth = $(window).width();
+        if (windowWidth > 480) {
+            document.write('<script type="text/javascript" src="/js/src/snow.js"><\/script>');
+        }
+    </script>
 </body>
 </html>
