@@ -75,6 +75,7 @@
 
 <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
 <body class="is-3-column">
     <nav class="navbar navbar-main">
@@ -249,14 +250,6 @@
 <!--<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>-->
 <script>
-    // Register AV objects to the global
-    window.AV = require('leancloud-storage');
-
-    // Use import
-    // import Valine from 'valine';
-    // or Use require
-    const Valine = require('valine');
-
     new Valine({
         el: '#valine-thread' ,
         notify: true,
@@ -265,14 +258,6 @@
         app_key: 'DSSC6yVKL4y2UUw675SkJNbK',
         placeholder: 'Add your comment...',
     });
-    /*new Valine({
-        el: '#valine-thread' ,
-        notify: true,
-        verify: true,
-        app_id: 'EqMoH31nyMkovndSsIr6X4Yt-9Nh9j0Va',
-        app_key: 'DSSC6yVKL4y2UUw675SkJNbK',
-        placeholder: 'Add your comment...'
-    });*/
 </script>
 <!---->
     </div>
@@ -853,6 +838,23 @@ document.addEventListener('DOMContentLoaded', function () {
 <link rel="stylesheet" href="/css/insight.css">
     
 
+    <!-- 评论 -->
+    <div id="vcomments"></div>
+    <script>
+        // Register AV objects to the global
+        window.AV = require('leancloud-storage');
+        const Valine = require('valine');
+        new Valine({
+            el: '#vcomments',
+            appId: 'EqMoH31nyMkovndSsIr6X4Yt-9Nh9j0Va',
+            appKey: 'DSSC6yVKL4y2UUw675SkJNbK',
+            notify: true,           // (optional) receive email notification
+            verify: true,           // (optional) show verification code
+            placeholder: 'Add your comment...',   // (optional) comment box placeholder text
+            visitor: true         // leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+        })
+    </script>
+
     <!--<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>-->
     <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
     <!--<script src="/js/src/click.js"></script>-->
@@ -863,6 +865,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.write('<script type="text/javascript" src="/js/src/snow.js"><\/script>');
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+    <!-- 看板娘 -->
+    <script src="https://cdn.jsdelivr.net/gh/Hunter2333/live2d-widget/autoload.js"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
