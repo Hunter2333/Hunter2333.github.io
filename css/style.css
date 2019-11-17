@@ -5,7 +5,15 @@ html {
   font-size: 14px;
 }
 body {
-  background-color: #f7f7f7;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
 }
 body,
 button,
